@@ -536,6 +536,10 @@ footer {
     .about-img {
         display: none;
     }
+
+    .project-info img {
+        height: 25vh;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -554,6 +558,10 @@ footer {
 
     .oss-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-info img {
+        height: 20vh;
     }
 }
 
@@ -618,6 +626,10 @@ footer {
         font-size: 0.75rem;
     }
 
+    .project-info img {
+        height: 15vh;
+    }
+
     .footer-contacts h2 {
         font-size: 0.75rem;
     }
@@ -631,13 +643,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     .right ul {
         flex-direction: column;
     }
 
     .project-info img {
-        height: 20vh;
+        height: 10vh;
     }
 
     .footer-contacts h2 {
@@ -655,7 +667,7 @@ footer {
 
 @media screen and (max-width: 300px) {
     .project-info img {
-        height: 15vh;
+        height: 7.5vh;
     }
 
     footer {
