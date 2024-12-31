@@ -215,14 +215,23 @@ span {
 
 .llf:hover {
 
-    .llf-info p,
-    i {
+    .llf-info i {
         color: var(--third-color);
     }
 
-    .llf-tags div i,
-    span {
+    .llf-info p {
+        color: var(--third-color);
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .llf-tags div i {
         color: var(--fifth-color);
+    }
+
+    .llf-tags div span {
+        color: var(--fifth-color);
+        font-style: italic;
     }
 }
 
@@ -296,15 +305,23 @@ span {
 }
 
 .tool:hover {
-
-    .tool-info p,
-    i {
+    .tool-info i {
         color: var(--third-color);
     }
 
-    .tool-tags div i,
-    span {
+    .tool-info p {
+        color: var(--third-color);
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .tool-tags div i {
         color: var(--fifth-color);
+    }
+
+    .tool-tags div span {
+        color: var(--fifth-color);
+        font-style: italic;
     }
 }
 
@@ -362,10 +379,14 @@ span {
 }
 
 .os:hover {
-
-    .os-info p,
-    i {
+    .os-info i {
         color: var(--third-color);
+    }
+
+    .os-info p {
+        color: var(--third-color);
+        font-style: italic;
+        font-weight: bold;
     }
 }
 
@@ -465,16 +486,80 @@ span {
 .project:hover {
     .project-info p {
         color: var(--third-color);
+        font-style: italic;
+    }
+
+    .project-info p:nth-child(2) {
+        font-weight: bold;
     }
 
     .project-info p:nth-child(3) {
         color: var(--fifth-color);
     }
 
-    .project-tags div i,
-    span {
+    .project-tags div i {
         color: var(--fifth-color);
     }
+
+    .project-tags div span {
+        color: var(--fifth-color);
+        font-style: italic;
+    }
+}
+
+/* <============RESUME============> */
+
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin: 80px auto;
+}
+
+.resume h2 {
+    font-size: 2rem;
+}
+
+.resume h2:hover {
+    text-decoration: underline solid var(--third-color);
+    text-underline-offset: 5px;
+}
+
+.resume-container {
+    border: 5px solid var(--fourth-color);
+    border-radius: 5px;
+    width: 45%;
+    height: 85vh;
+    margin: 0 auto;
+}
+
+.resume-container embed {
+    width: 100%;
+    height: 100%;
+}
+
+.resume-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resume-buttons button {
+    padding: 10px;
+    background: transparent;
+    border: 2px solid var(--third-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resume-buttons button:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
 }
 
 /* <============FOOTER============> */
@@ -588,11 +673,19 @@ footer {
     .about-img img {
         height: 20vh;
     }
+
+    .resume-buttons {
+        flex-direction: column;
+    }
+
+    .resume-container {
+        width: 65%;
+    }
 }
 
 @media screen and (max-width: 800px) {
     nav {
-        gap: 20px;
+        gap: 30px;
         flex-direction: column;
     }
 
@@ -610,6 +703,10 @@ footer {
 
     .project-info img {
         height: 15vh;
+    }
+
+    .resume-container {
+        width: 75%;
     }
 }
 
@@ -686,6 +783,18 @@ footer {
         height: 10vh;
     }
 
+    .resume h2 {
+        font-size: 1rem;
+    }
+
+    .resume-buttons button {
+        font-size: 0.5rem;
+    }
+
+    .resume-container {
+        width: 85%;
+    }
+
     .footer-contacts h2 {
         font-size: 0.75rem;
     }
@@ -733,6 +842,10 @@ footer {
         height: 7.5vh;
     }
 
+    .resume h2 {
+        font-size: 0.75rem;
+    }
+
     .footer-contacts h2 {
         font-size: 0.5rem;
     }
@@ -769,6 +882,14 @@ footer {
 
     .project-info img {
         height: 5vh;
+    }
+
+    .project-info button {
+        font-size: 0.5rem;
+    }
+
+    .resume h2 {
+        font-size: 0.5rem;
     }
 
     footer {
