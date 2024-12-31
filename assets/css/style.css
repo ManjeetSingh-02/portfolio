@@ -46,9 +46,29 @@ nav {
     text-decoration: none;
 }
 
+.right ul li:nth-child(3) a {
+    border: 2px solid var(--third-color);
+}
+
+.right ul li:nth-child(4) a {
+    border: 2px solid var(--third-color);
+}
+
 .right ul li a:hover {
     text-decoration: underline solid var(--third-color);
     text-underline-offset: 5px;
+}
+
+.right ul li:nth-child(3) a:hover {
+    text-decoration: none;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+.right ul li:nth-child(4) a:hover {
+    text-decoration: none;
+    background-color: var(--third-color);
+    color: var(--primary-color);
 }
 
 /* <============ABOUT============> */
@@ -682,6 +702,11 @@ footer {
 @media screen and (max-width: 450px) {
     .right ul {
         flex-direction: column;
+    }
+
+    .right ul li:nth-child(3) {
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
 
     .about-img img {
