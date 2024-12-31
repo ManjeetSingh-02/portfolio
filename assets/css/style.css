@@ -78,6 +78,19 @@ nav {
     color: var(--third-color);
 }
 
+.about-me p span {
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    font-weight: bold;
+}
+
+.about-me p:nth-child(3):hover {
+    span {
+        font-style: italic;
+        color: var(--third-color);
+    }
+}
+
 .about-me button {
     margin: 20px 0;
     padding: 10px;
@@ -520,6 +533,14 @@ footer {
 }
 
 @media screen and (max-width: 1650px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about-me p {
+        max-width: 100%;
+    }
+
     .project-info img {
         height: 20vh;
     }
@@ -544,10 +565,6 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    .about {
-        flex-direction: column-reverse;
-    }
-
     .about-img img {
         height: 20vh;
     }
@@ -594,6 +611,10 @@ footer {
     }
 
     .about-me p:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .about-me p span {
         font-size: 1rem;
     }
 
