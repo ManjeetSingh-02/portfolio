@@ -430,7 +430,6 @@ span {
 }
 
 .project:hover {
-
     .project-info p {
         color: var(--third-color);
     }
@@ -514,6 +513,18 @@ footer {
 
 /* <============RESPONSIVE-NESS============> */
 
+@media screen and (max-width: 1800px) {
+    .project-info img {
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .project-info img {
+        height: 20vh;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .llfs-container {
         grid-template-columns: repeat(2, 1fr);
@@ -532,13 +543,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
-    .about-img {
-        display: none;
+@media screen and (max-width: 1200px) {
+    .about {
+        flex-direction: column-reverse;
     }
 
-    .project-info img {
-        height: 25vh;
+    .about-img img {
+        height: 20vh;
     }
 }
 
@@ -561,7 +572,7 @@ footer {
     }
 
     .project-info img {
-        height: 20vh;
+        height: 15vh;
     }
 }
 
@@ -592,6 +603,10 @@ footer {
 
     .about-me ul {
         font-size: 1rem;
+    }
+
+    .about-img img {
+        height: 15vh;
     }
 
     .llfs h2 {
@@ -627,7 +642,7 @@ footer {
     }
 
     .project-info img {
-        height: 15vh;
+        height: 10vh;
     }
 
     .footer-contacts h2 {
@@ -648,8 +663,28 @@ footer {
         flex-direction: column;
     }
 
-    .project-info img {
+    .about-img img {
         height: 10vh;
+    }
+
+    .llfs h2 {
+        font-size: 0.75rem;
+    }
+
+    .tools h2 {
+        font-size: 0.75rem;
+    }
+
+    .oss h2 {
+        font-size: 0.75rem;
+    }
+
+    .projects h2 {
+        font-size: 0.75rem;
+    }
+
+    .project-info img {
+        height: 7.5vh;
     }
 
     .footer-contacts h2 {
@@ -666,8 +701,28 @@ footer {
 }
 
 @media screen and (max-width: 300px) {
-    .project-info img {
+    .about-img img {
         height: 7.5vh;
+    }
+
+    .llfs h2 {
+        font-size: 0.5rem;
+    }
+
+    .tools h2 {
+        font-size: 0.5rem;
+    }
+
+    .oss h2 {
+        font-size: 0.5rem;
+    }
+
+    .projects h2 {
+        font-size: 0.5rem;
+    }
+
+    .project-info img {
+        height: 5vh;
     }
 
     footer {
