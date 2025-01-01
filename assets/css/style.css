@@ -46,11 +46,11 @@ nav {
     text-decoration: none;
 }
 
-.right ul li:nth-child(3) a {
+.right ul li:nth-last-child(1) a {
     border: 2px solid var(--third-color);
 }
 
-.right ul li:nth-child(4) a {
+.right ul li:nth-last-child(2) a {
     border: 2px solid var(--third-color);
 }
 
@@ -59,13 +59,13 @@ nav {
     text-underline-offset: 5px;
 }
 
-.right ul li:nth-child(3) a:hover {
+.right ul li:nth-last-child(1) a:hover {
     text-decoration: none;
     background-color: var(--third-color);
     color: var(--primary-color);
 }
 
-.right ul li:nth-child(4) a:hover {
+.right ul li:nth-last-child(2) a:hover {
     text-decoration: none;
     background-color: var(--third-color);
     color: var(--primary-color);
