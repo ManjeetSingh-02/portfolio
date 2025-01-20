@@ -25,7 +25,7 @@ import Ubuntu from "../assets/icons/ubuntu.svg";
 export const pageDetails = {
   home: {
     name: "Home",
-    title: "Portfolio - Manjeet Singh",
+    title: "Home Page - Manjeet Singh",
     description: "Home page of Manjeet Singh's portfolio.",
     path: "/",
     component: Home,
