@@ -5,20 +5,26 @@ import { useTheme } from "./hooks/useTheme";
 import { themeContext } from "./contexts/themeContext";
 import { pageDetails, notFoundPageDetails } from "./libraries/constants";
 import { createElement } from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function Layout() {
   const [theme, setTheme] = useTheme();
 
   return (
-    <themeContext.Provider value={{ theme, setTheme }}>
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </themeContext.Provider>
+    <>
+      <themeContext.Provider value={{ theme, setTheme }}>
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </themeContext.Provider>
+      <Analytics />
+      <SpeedInsights />
+    </>
   );
 }
 
