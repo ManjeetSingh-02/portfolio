@@ -1,10 +1,14 @@
 import PropTypes from "prop-types";
 
 const TSIHeading = ({ name }) => {
-  return <span className="text-center sm:text-start text-xl font-normal text-darkTheme-accent dark:text-lightTheme-accent">{name}</span>;
+  return (
+    <span className="text-center text-xl font-bold text-darkTheme-accent dark:text-lightTheme-accent sm:text-start">
+      {name}
+    </span>
+  );
 };
 
-PropTypes.TSIHeading = {
+TSIHeading.propTypes = {
   name: PropTypes.string.isRequired,
 };
 

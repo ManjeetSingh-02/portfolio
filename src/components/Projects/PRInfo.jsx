@@ -10,12 +10,12 @@ const PRInfo = ({ name, description, websiteUrl, githubUrl }) => {
       <span className="text-sm sm:text-xl">{description}</span>
       <div className="flex flex-col xl:flex-row items-center justify-center gap-4">
         <CustomRedirectButton
-          name={"Visit the Website"}
+          name={"View Website"}
           url={websiteUrl}
           target={"_blank"}
         />
         <CustomRedirectButton
-          name={"View Code on the Github"}
+          name={"GitHub Repository"}
           url={githubUrl}
           target={"_blank"}
         />
