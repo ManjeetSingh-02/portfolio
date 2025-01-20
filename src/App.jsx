@@ -5,7 +5,6 @@ import { useTheme } from "./hooks/useTheme";
 import { themeContext } from "./contexts/themeContext";
 import { pageDetails, notFoundPageDetails } from "./libraries/constants";
 import { createElement } from "react";
-import { Analytics } from "@vercel/analytics/react"
 
 function Layout() {
   const [theme, setTheme] = useTheme();
