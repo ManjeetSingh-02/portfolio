@@ -14,7 +14,7 @@ This git contains code for personal portfolio website.
 
 This portfolio website is designed to showcase the projects and techstack. It includes sections for home, tech stack, projects, and a 404 not found page.
 
-- [Visit Site](https://manjeetsinghportfolio.vercel.app)
+- [Visit Site](https://manjeetsingh.netlify.app/)
 
 ## Pages
 
