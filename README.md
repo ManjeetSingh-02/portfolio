@@ -44,7 +44,8 @@ portfolio
 ├── postcss.config.js
 ├── public
 │   ├── favicon.ico
-│   └── manjeetsingh_resume.pdf
+│   ├── manjeetsingh_resume.pdf
+│   └── _redirect
 ├── README.md
 ├── src
 │   ├── App.jsx
@@ -125,5 +126,5 @@ portfolio
 ├── vercel.json
 └── vite.config.js
 
-17 directories, 71 files
+17 directories, 72 files
 ```
